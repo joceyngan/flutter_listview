@@ -1,45 +1,19 @@
 import 'package:flutter/material.dart';
 
+import './add_food.dart';
+
 void main() => runApp(MyApp());
 
-class MyApp extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    //throw UnimplementedError();
-    return _MyAppState();
-  }
-}
-
-class _MyAppState extends State{
-  List<String> products = ['Dessert']; 
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    print('main: build()');
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('A List'),
-        ),
-        body: Column(
-          children: <Widget>[
-            Container(
-              margin: EdgeInsets.all(10),
-              child: ElevatedButton(
-                onPressed: () {},
-                child: Text('Add Product'),
-              ),
-            ),
-            Card(
-              child: Column(
-                children: <Widget>[
-                  Image.asset('assets/test_bakeryimages/headimage.jpg'),
-                  Text('Foods')
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
+          appBar: AppBar(
+            title: Text('A List'),
+          ),
+          body: AddFood(foodList: 'some foods',),
+    ));
   }
 }

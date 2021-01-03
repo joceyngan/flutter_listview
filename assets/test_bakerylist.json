@@ -2,56 +2,56 @@
 {
     "ID":"A0001",
     "Name":"Vanilla Cake",
-    "Image":".\test_bakeryimages\vanillacake.jpg",
+    "Image":"assets/test_bakeryimages/anillacake.jpg",
     "Ingredients":[ "Flour", "Butter", "Eggs", "Sugar", "Vanilla oil" ],
     "Price":50
 },
 {
     "ID":"A0002",
     "Name":"Lemon Cake",
-    "Image":".\test_bakeryimages\lemoncake.jpg",
+    "Image":"assets/test_bakeryimages/lemoncake.jpg",
     "Ingredients":[ "Flour", "Butter", "Eggs", "Sugar", "Lemon juice", "Lemon Peels" ],
     "Price":65
 },
 {
     "ID":"A0003",
     "Name":"Chocolate Cake",
-    "Image":".\test_bakeryimages\chocolatecake.jpg",
+    "Image":"assets/test_bakeryimages/chocolatecake.jpg",
     "Ingredients":[ "Flour", "Butter", "Eggs", "Sugar", "Vanilla oil", "Cocoa powder" ],
     "Price":90
 },
 {
     "ID":"B0001",
     "Name":"Butter Cookie",
-    "Image":".\test_bakeryimages\buttercookie.jpg",
+    "Image":"assets/test_bakeryimages/buttercookie.jpg",
     "Ingredients":[ "Flour", "Butter", "Sugar", "Vanilla oil" ],
     "Price":50
 },
 {
     "ID":"B0002",
     "Name":"Chocolate Chips Cookie",
-    "Image":".\test_bakeryimages\chocolatechipscookie.jpg",
+    "Image":"assets/test_bakeryimages/chocolatechipscookie.jpg",
     "Ingredients":[ "Flour", "Butter", "Sugar", "Vanilla oil", "Cocoa powder", "Chocolate Chips" ],
     "Price":65
 },
 {
     "ID":"C0001",
     "Name":"Shortbread",
-    "Image":".\test_bakeryimages\shortbread.jpg",
+    "Image":"assets/test_bakeryimages/shortbread.jpg",
     "Ingredients":[ "Flour", "Butter", "Sugar" ],
     "Price":25
 },
 {
     "ID":"A0004",
     "Name":"Carrot Cake",
-    "Image":".\test_bakeryimages\carrotcake.jpg",
+    "Image":"assets/test_bakeryimages/carrotcake.jpg",
     "Ingredients":[ "Flour", "Butter", "Eggs", "Sugar", "Carrot" , "Cinnamonl" ],
     "Price":70
 },
 {
     "ID":"C0002",
     "Name":"Macaroon",
-    "Image":".\test_bakeryimages\macaroon.jpg",
+    "Image":"assets/test_bakeryimages/macaroon.jpg",
     "Ingredients":[ "Egg white", "Almond powder", "Sugar" ],
     "Price":25
 }
