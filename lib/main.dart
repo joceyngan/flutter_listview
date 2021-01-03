@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './add_food.dart';
+import 'food_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text('A List'),
           ),
-          body: AddFood(foodList: 'some foods',),
+          body: FoodList(foodList: 'some foods',),
     ));
   }
 }

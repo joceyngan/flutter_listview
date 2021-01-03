@@ -2,7 +2,7 @@
 {
     "ID":"A0001",
     "Name":"Vanilla Cake",
-    "Image":"assets/test_bakeryimages/anillacake.jpg",
+    "Image":"assets/test_bakeryimages/vanillacake.jpg",
     "Ingredients":[ "Flour", "Butter", "Eggs", "Sugar", "Vanilla oil" ],
     "Price":50
 },
