@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text('A List'),
           ),
-          body: FoodList(foodList: 'some foods',),
+          body: FoodList(),
+          
     ));
   }
 }
