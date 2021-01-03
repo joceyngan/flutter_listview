@@ -30,7 +30,7 @@
 {
     "ID":"B0002",
     "Name":"Chocolate Chips Cookie",
-    "Image":"assets/test_bakeryimages/chocolatechipscookie.jpg",
+    "Image":"assets/test_bakeryimages/chocolatechipcookie.jpg",
     "Ingredients":[ "Flour", "Butter", "Sugar", "Vanilla oil", "Cocoa powder", "Chocolate Chips" ],
     "Price":65
 },

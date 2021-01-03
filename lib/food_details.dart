@@ -17,7 +17,7 @@ class FoodDetails extends StatelessWidget {
         Image.asset(
           'assets/test_bakeryimages/headimage.jpg', //temp image
         ),
-        Padding(padding: EdgeInsets.all(10), child: Text('some details')),
+        Padding(padding: EdgeInsets.all(10), child: Text('some details...')),
       ],
     );
   }
