@@ -5,9 +5,9 @@ class Product {
   List<String> ingredients;
   double price;
 
-  Product(this.id,
+  Product({this.id,
     this.name,
     this.imageUrl,
     this.ingredients,
-    this.price);
+    this.price});
 }

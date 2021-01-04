@@ -19,7 +19,7 @@ class FoodList extends StatefulWidget {
 }
 
 class _FoodListState extends State<FoodList> {
-  List data = [];
+  String data = '';
 
   @override
   //execute when the widget is drawn onto the screen for the first time
@@ -35,11 +35,13 @@ class _FoodListState extends State<FoodList> {
 
     Future _loadJSON() async {
       print('food list: _loadJSON()');
-      String data = 
-        await rootBundle.loadString('assets/test_bakerylist.json');
-      Map<String, dynamic> jsonProducts = json.decode(data);
+      data = 
+        await rootBundle.loadString('./lib/assets/test_bakerylist.json');
+      List<dynamic> jsonProducts = json.decode(data);
       String name = jsonProducts[0]['Name'];
       print(name); //for checking if can load json
+      print(jsonProducts);
+      print(jsonProducts[0]);
     }
 /*  //another method to load json
     Future _loadJSON() async {
@@ -55,9 +57,9 @@ class _FoodListState extends State<FoodList> {
     return Center(
         child: FutureBuilder(
             future: DefaultAssetBundle.of(context)
-                .loadString('assets/test_bakerylist.json'),
+                .loadString('./lib/assets/test_bakerylist.json'),
             builder: (context, snapshot) {
-              var newProductList = json.decode(snapshot.data.toString());
+              List<dynamic> newProductList = json.decode(snapshot.data.toString());
               return ListView.builder(
                 scrollDirection: Axis.vertical,
                 shrinkWrap: true,
@@ -70,14 +72,14 @@ class _FoodListState extends State<FoodList> {
                       children: <Widget>[
                         Container(height: 100, width: 100, child: Image.asset(
                             //temp image
-                            'assets/test_bakeryimages/vanillacake.jpg')),
+                            newProductList[index]['ImageUrl'])),
                         InkWell(
                           onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
                                     builder: (_) =>
-                                        FoodDetails(newProductList)));
+                                        FoodDetails(newProductList[index])));
                           }, //transition to detail view
                           child: Text(
                             newProductList[index]['Name'],

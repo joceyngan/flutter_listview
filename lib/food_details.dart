@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_listview/product.dart';
 
 class FoodDetails extends StatelessWidget {
-  final List<Product> products;
+  final Product product;
 
-  FoodDetails(this.products) {
-    print('food details: constructor');
+  FoodDetails(this.product) {
+    print('food details: constructor , Product Name: '+ product.name);
   }
 
   @override
