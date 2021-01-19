@@ -74,11 +74,11 @@ class _FoodListState extends State<FoodList> {
                             //temp image
                             newProductList[index]['ImageUrl'])),
                         InkWell(
-                          onTap: () {
+                          onTap: () { 
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (_) =>
+                                    builder: (context) =>
                                         FoodDetails(newProductList[index])));
                           }, //transition to detail view
                           child: Text(

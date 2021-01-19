@@ -5,8 +5,8 @@ import 'package:flutter_listview/product.dart';
 class FoodDetails extends StatelessWidget {
   final Product product;
 
-  FoodDetails(this.product) {
-    print('food details: constructor , Product Name: '+ product.name);
+  FoodDetails(newProductList, {this.product}) {
+    print('food details: constructor , Product Name: ');
   }
 
   @override
@@ -15,9 +15,10 @@ class FoodDetails extends StatelessWidget {
     return Column(
       children: <Widget>[
         Image.asset(
-          'assets/test_bakeryimages/headimage.jpg', //temp image
+          './lib/assets/test_bakeryimages/vanillacake.jpg', //temp image
         ),
         Padding(padding: EdgeInsets.all(10), child: Text('some details...')),
+        Padding(padding: EdgeInsets.all(10), child: Text('more details...')),
       ],
     );
   }
